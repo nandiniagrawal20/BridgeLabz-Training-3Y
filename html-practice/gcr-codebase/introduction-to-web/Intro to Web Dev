@@ -1,0 +1,609 @@
+                       ASSIGNMENT-1
+
+
+
+Ques1. Explain the difference between frontend, backend, and full-stack development with suitable real-world examples.
+Answer:
+
+Web development is generally divided into frontend development, backend development, and full-stack development.
+
+1. Frontend Development
+
+Frontend development deals with the part of a website or web application that users can see and interact with. It is also called client-side development.
+
+Frontend developers create:
+
+Buttons
+Menus
+Forms
+Images
+
+Common frontend technologies are:
+
+HTML – creates the structure of a webpage.
+CSS – provides styling and layout.
+
+Example:
+On an online shopping website, the product images, "Add to Cart" button, search bar, navigation menu, and product page are parts of the frontend.
+
+2. Backend Development
+
+Backend development deals with the server-side part of a website. Users generally cannot directly see the backend code.
+
+The backend:
+
+Processes user requests
+Handles business logic
+Communicates with databases
+Authenticates users
+
+Common backend technologies include:
+
+Node.js
+Java
+Python
+PHP
+C#
+
+Example:
+When a user logs into an online shopping website, the backend verifies the username and password from the database and sends the result back to the frontend.
+
+3. Full-Stack Development
+
+A full-stack developer works on both the frontend and backend of a web application. They may also work with databases, APIs, deployment, and version control.
+
+For example, a MERN full-stack developer may use:
+
+MongoDB – Database
+Express.js – Backend framework
+
+Ques2. Create a simple diagram showing how the client-server model works in web architecture.
+Answer:
+
+The client-server model is a system in which a client sends a request to a server, and the server processes the request and sends a response back.
+
+             REQUEST
+      ┌───────────────────┐
+      │                   │
+      ▼                   │
+┌─────────────┐      ┌─────────────┐
+│   CLIENT    │─────►│   SERVER    │
+│             │      │             │
+│ Web Browser │      │ Web Server  │
+│ Mobile App  │      │ Application │
+└─────────────┘      └──────┬──────┘
+      ▲                      │
+      │                      │
+      │     RESPONSE         │
+      └──────────────────────┘
+
+Working:
+1.The client is usually a web browser such as Chrome, Firefox, or Edge.
+2.The user enters a website address.
+3.The browser sends an HTTP/HTTPS request to the server.
+4.The server receives and processes the request.
+5.If required, the server communicates with a database.
+6.The server generates a response.
+7.The response is sent back to the client.
+8.The browser displays the result to the user.
+
+
+Ques3. Describe how a browser requests and displays a web page from a web server.
+Answer:
+
+When a user enters a website address in a browser, several steps take place before the webpage appears.
+
+Step 1: User enters URL
+
+The user enters a URL such as:
+
+https://www.example.com
+Step 2: DNS lookup
+
+The browser needs to find the IP address of the web server associated with the domain name.
+
+For example:
+
+example.com → IP address of server
+
+DNS stands for Domain Name System.
+
+Step 3: Connection with server
+
+The browser establishes a connection with the server. For HTTPS websites, a secure TLS connection is also established.
+
+Step 4: HTTP/HTTPS request
+
+The browser sends a request to the server.
+
+For example:
+
+GET /index.html HTTP/1.1
+
+Step 5: Server processes the request
+
+The web server receives the request and determines what information should be returned.
+
+For a dynamic website, the application may also communicate with a database.
+
+Step 6: Server sends response
+
+The server sends an HTTP response containing resources such as:
+
+HTML
+CSS
+JavaScript
+
+Step 7: Browser processes the HTML
+
+The browser reads the HTML and creates the DOM (Document Object Model).
+
+Step 8: Browser loads CSS and JavaScript
+
+The browser downloads linked CSS, JavaScript, images, fonts, etc.
+
+Step 9: Rendering
+
+The browser calculates the layout, applies CSS styles, executes JavaScript, and renders the webpage on the screen.
+
+
+Ques4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+Answer:
+
+A web development environment consists of different software tools that help developers create, test, debug, manage, and deploy websites.
+
+Tool	Purpose
+VS Code	Code editor used to write and manage code
+Web Browser	Used to run and test websites
+Git	Version control system
+
+
+1. Visual Studio Code
+
+VS Code is a popular source-code editor. Developers can write:
+
+HTML
+CSS
+JavaScript
+Java
+Python
+
+2. Web Browser
+
+Examples include:
+
+Google Chrome
+Mozilla Firefox
+Microsoft Edge
+
+Browsers are used to test and view websites.
+
+3. Git
+
+Git is a distributed version control system. It keeps track of changes made to project files.
+
+Example:
+
+git add .
+git commit -m "Initial commit"
+4. GitHub
+
+GitHub is an online platform where Git repositories can be stored and shared.
+
+It is useful for:
+
+Project hosting
+Collaboration
+Version control
+
+5. Node.js
+
+Node.js allows JavaScript to run outside the browser and is commonly used for backend development.
+
+6. npm
+
+npm stands for Node Package Manager. It is used to install and manage JavaScript packages.
+
+Example:
+
+npm install express
+7. Terminal
+
+The terminal is used to execute commands such as:
+
+git status
+npm install
+
+8. Live Server
+
+Live Server allows developers to see webpage changes quickly while developing.
+
+5. Explain what a web server is and give examples of commonly used servers.
+Answer:
+
+A web server is software and/or a computer system that receives requests from clients such as web browsers and sends web resources in response.
+
+The resources may include:
+
+HTML files
+CSS files
+JavaScript files
+Images
+Videos
+Documents
+Browser
+
+Examples of commonly used web servers:
+
+1. Apache HTTP Server
+
+Apache is an open-source and widely used web server.
+
+2. Nginx
+
+Nginx is commonly used for serving websites and as a reverse proxy.
+
+3. Microsoft IIS
+
+IIS stands for Internet Information Services and is Microsoft's web server.
+
+4. LiteSpeed
+
+LiteSpeed is a high-performance web server used by many hosting providers.
+
+
+
+6. Define the roles of a frontend developer, backend developer, and database administrator in a project.
+Answer:
+
+Different professionals have different responsibilities in a web development project.
+
+1. Frontend Developer
+
+A frontend developer creates the user interface and client-side functionality.
+
+Responsibilities:
+Create webpage layouts
+Write HTML, CSS, and JavaScript
+Create responsive designs
+Implement buttons, forms, menus, etc.
+
+Example:
+Creating the login page that contains:
+
+Username
+Password
+
+2. Backend Developer
+
+A backend developer handles the server-side logic of the application.
+
+Responsibilities:
+Create APIs
+Implement business logic
+Handle authentication
+Communicate with databases
+
+Example:
+
+When a user clicks Login, the backend receives the username and password and verifies them.
+
+3. Database Administrator (DBA)
+
+A database administrator manages the application's databases.
+
+Responsibilities:
+Create and manage databases
+Create tables/collections
+Manage users and permissions
+
+
+7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup.
+Answer:
+
+Visual Studio Code (VS Code) is a popular code editor used for web development.
+
+Step 1: Download VS Code
+
+Visit the official VS Code website and download the version appropriate for your operating system.
+
+Step 2: Install VS Code
+
+Run the installer and follow the installation instructions.
+
+During installation, options such as adding VS Code to the PATH can be useful.
+
+Step 3: Open VS Code
+
+After installation, open Visual Studio Code.
+
+Step 4: Create a project folder
+
+For example:
+
+Web Development
+
+Open this folder in VS Code using:
+
+File → Open Folder
+
+Step 5: Create HTML file
+
+Create:
+
+index.html
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+</head>
+<body>
+
+    <h1>Hello World</h1>
+
+</body>
+</html>
+Step 6: Create CSS file
+
+Create:
+
+style.css
+
+Example:
+
+h1 {
+    font-size: 30px;
+}
+
+Connect it to HTML:
+
+<link rel="stylesheet" href="style.css">
+Step 7: Create JavaScript file
+
+Create:
+
+script.js
+
+Example:
+
+console.log("Hello JavaScript");
+
+Connect it to HTML:
+
+<script src="script.js"></script>
+Step 8: Install useful extensions
+
+From the Extensions section in VS Code, you can install extensions such as:
+
+Live Server
+Prettier
+JavaScript/TypeScript support
+Step 9: Test the webpage
+
+Right-click index.html and select Open with Live Server if the extension is installed.
+
+
+8. Explain the difference between static and dynamic websites. Provide an example of each.
+Answer:
+
+Websites can generally be classified as static websites and dynamic websites.
+
+Static Website
+
+A static website displays mostly fixed content. The content generally remains the same unless a developer manually changes the files.
+
+Technologies commonly used:
+HTML
+CSS
+JavaScript
+Advantages:
+Simple to develop
+
+Example:
+
+A simple personal portfolio containing:
+
+Home
+About Me
+Skills
+Contact
+
+If the developer wants to change the information, they generally modify the files.
+
+Dynamic Website
+
+A dynamic website generates or retrieves content based on user actions, database information, or other changing data.
+
+Technologies may include:
+HTML
+CSS
+JavaScript
+Node.js
+Express.js
+PHP
+Java
+Python
+
+Example:
+
+An e-commerce website such as an online shopping platform.
+
+When you search for a product, the website can retrieve product information from a database and display it.
+
+9. Research and list five web browsers. Explain how rendering engines differ between them.
+Answer:
+
+A web browser is software used to access and display websites on the internet.
+
+Five popular web browsers are:
+
+Google Chrome
+Mozilla Firefox
+Microsoft Edge
+Apple Safari
+Opera
+
+
+A rendering engine is the browser component responsible for processing web content and displaying it on the screen.
+
+It processes technologies such as:
+
+HTML
+CSS
+Images
+Fonts
+
+and works with JavaScript execution to make webpages interactive.
+
+Browser and rendering engines
+Browser	Main Rendering Engine
+Google Chrome	Blink
+Microsoft Edge	Blink
+
+1. Google Chrome — Blink
+
+Chrome uses Blink, which is developed as part of the Chromium project.
+
+2. Microsoft Edge — Blink
+
+Modern Microsoft Edge is also based on Chromium and uses Blink for rendering.
+
+3. Opera — Blink
+
+Modern Opera is Chromium-based and uses Blink.
+
+4. Mozilla Firefox — Gecko
+
+Firefox uses Mozilla's Gecko rendering engine.
+
+5. Safari — WebKit
+
+Safari uses Apple's WebKit rendering engine.
+
+
+
+10. Draw a labeled diagram showing the basic web architecture flow — client, server, database, and APIs.
+Answer:
+
+A basic web architecture consists of a client, server/application, APIs, and database.
+
+Labeled diagram:
+                         INTERNET
+                            │
+                            │
+                    HTTP / HTTPS
+                            │
+                            ▼
+                 ┌──────────────────┐
+                 │      CLIENT      │
+                 │                  │
+                 │ Web Browser      │
+                 │ Mobile App       │
+                 └────────┬─────────┘
+                          │
+                          │ API Request
+                          ▼
+                 ┌──────────────────┐
+                 │       API        │
+                 │                  │
+                 │ GET /users       │
+                 │ POST /login      │
+                 │ PUT /users       │
+                 │ DELETE /users    │
+                 └────────┬─────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │      SERVER      │
+                 │                  │
+                 │ Business Logic   │
+                 │ Authentication   │
+                 │ Request Handling │
+                 └────────┬─────────┘
+                          │
+                          │ Database Query
+                          ▼
+                 ┌──────────────────┐
+                 │     DATABASE     │
+                 │                  │
+                 │ Users            │
+                 │ Products         │
+                 │ Orders           │
+                 │ Other Data       │
+                 └────────┬─────────┘
+                          │
+                          │ Data/Result
+                          ▼
+                 ┌──────────────────┐
+                 │      SERVER      │
+                 └────────┬─────────┘
+                          │
+                          │ API Response
+                          ▼
+                 ┌──────────────────┐
+                 │      CLIENT      │
+                 │                  │
+                 │ Displays Result  │
+                 └──────────────────┘
+Explanation:
+
+1. Client
+
+The client is the device or application used by the user.
+
+Examples:
+
+Web browser
+Mobile application
+Desktop application
+
+The client sends requests to the server.
+
+2. API
+
+API stands for Application Programming Interface.
+
+An API provides a way for different software components to communicate.
+
+For example:
+
+GET /products
+
+can request a list of products.
+
+3. Server
+
+The server receives requests and performs the required operations.
+
+It may:
+
+Validate input
+Authenticate users
+
+4. Database
+
+The database stores application information.
+
+For example:
+
+Users
+Products
+Orders
+Payments
+Complete flow:
+Client
+  ↓
+API Request
+  ↓
+Server
+  ↓
+Database
+  ↓
+Server
+  ↓
+API Response
+  ↓
+Client
