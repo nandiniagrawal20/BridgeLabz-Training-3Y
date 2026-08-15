@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title shown in the browser tab -->
+    <title>My First Web Page</title>
+</head>
+
+<body>
+
+    <!-- Main heading containing the user's full name -->
+    <h1>Nandini Agrawal</h1>
+
+    <!-- Short introduction about yourself -->
+    <p>
+        Hello! My name is Nandini Agrawal. I am a student who is interested
+        in learning web development and programming. I enjoy learning new
+        technologies and improving my coding skills.
+    </p>
+
+</body>
+</html>
