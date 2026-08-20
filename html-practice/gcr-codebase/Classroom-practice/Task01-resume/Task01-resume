@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Nandini Agrawal - Resume</title>
+    </head>
+
+    <body>
+
+        
+
+        <div align="center">
+            <h1>Nandini Agrawal</h1>
+            <p>
+                Phone: +91 1234567890 &nbsp;|&nbsp; 
+                Address: Jalesar, Uttar Pradesh
+            </p>
+            <p>
+                Email: <a href="mailto:nandinisinghal2020@gmail.com@gmail.com" target="_blank">nandinisinghal2020@gmail.com</a>
+            </p>
+            <p>
+        </div>
+
+        <hr>
+
+        
+
+
+        <h3><i>Profile Summary</i></h3>
+        <p>
+            B.Tech Computer Science student and aspiring AI Engineer, passionate about Artificial Intelligence, Machine Learning, and Software Development. Eager to learn modern technologies and build scalable, real-world solutions.
+        </p>
+
+        <hr>
+
+
+        
+
+        <h3><i>Education</i></h3>
+        <ul>
+            <li>
+                <strong>Bachelor of Technology in Computer Science</strong><br>
+                GLA University, Mathura &nbsp;|&nbsp; Aug 2024 – May 2028<br>
+                
+            </li>
+        </ul>
+        
+        <hr>
+        
+
+
+        <h3><i>Projects</i></h3>
+        <ul>
+            <li>
+                <strong>HireSense AI - Mock AI Interview Platform</strong> &nbsp;|&nbsp; <em>Jun 2026 - Present</em><br>
+                <b>Tech Stack:</b> React, Node.js, Express, REST APIs, OpenAI API, Gen AI
+                <ul>
+                    <li>Built an AI-powered mock interview platform with personalized real-time feedback.</li>
+                    <li>Integrated REST APIs and GenAI models to automate interview simulations.</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <strong>AI-Support-Bot</strong> &nbsp;|&nbsp; <em>Jun 2026 - Present</em> | </a><br>
+                <b>Tech Stack:</b> Python, LlamaIndex, RAG, Groq API, Streamlit
+                <ul>
+                    <li>Developed a context-aware RAG system using LlamaIndex for accurate support responses.</li>
+                    <li>Integrated Groq API to improve retrieval speed and reduce latency.</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <strong>AI-Resume-Analyzer</strong> &nbsp;|&nbsp; <em>Apr 2026 – Jun 2026</em> &nbsp;|&nbsp;  </a><br>
+                <b>Tech Stack:</b> Python, Pandas, NumPy, Streamlit, NLP, PDF Processing
+                <ul>
+                    <li>Built an AI-powered resume parser for automated skill extraction from PDFs.</li>
+                    <li>Developed a Streamlit interface for instant resume analysis and feedback.</li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <strong>Student Performance Predictor</strong> &nbsp;|&nbsp; <em>Jan 2026 - Mar 2026</em> &nbsp;|&nbsp; <a><br>
+                <b>Tech Stack:</b> Python, Pandas, NumPy, Matplotlib, Scikit-learn, Streamlit
+                <ul>
+                    <li>Developed an ML model achieving 85% accuracy in student performance prediction.</li>
+                    <li>Built an interactive Streamlit dashboard for real-time analytics and visualization.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr>
+
+
+
+        <h3><i>Open Source & Extracurricular</i></h3>
+        <ul>
+            <li><strong>GSSOC 2026 Contributor:</strong> Contributed to open-source projects using Git and GitHub.</li>
+            <li><strong>DSA Problem Solving:</strong> Solved 800+ DSA problems across LeetCode, CodeChef, HackerRank, and GeeksforGeeks.</li>
+            <li><strong>Hackathon Participation:</strong> Participated in Devi@thon Hackathon and SheTech Coding Quest (IEEE WIE MRU, 2026), building AI-driven solutions.</li>
+        </ul>
+
+        <hr>
+
+
+        
+
+        <h3><i>Certifications</i></h3>
+        <ul>
+            <li>Microsoft Certified: Power BI Data Analyst Associate [PL-300] &nbsp;|&nbsp; <em>Jun 2026</em></li>
+            <li>Oracle Certified Foundations Associate [1Z0-1157-26] &nbsp;|&nbsp; <em>Jun 2026</em></li>
+            <li>Infosys Springboard - Data Science Certification &nbsp;|&nbsp; <em>Aug 2025</em></li>
+            <li>Tata Group - GenAI Powered Data Analytics Job Simulation &nbsp;|&nbsp; <em>Nov 2025</em></li>
+        </ul>
+
+        <hr>
+
+
+        
+
+        <h3><i>Skills</i></h3>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python, Java (DSA & OOP)</li>
+            <li><strong>AI/ML & Data Science:</strong> GenAI, RAG, LLM Applications, NLP, Scikit-learn, Pandas, NumPy, Matplotlib</li>
+            <li><strong>Frameworks & Tools:</strong> Streamlit, LlamaIndex, Groq API, Git/GitHub, Vercel</li>
+            <li><strong>Databases:</strong> SQL, MongoDB, PostgreSQL</li>
+            <li><strong>Professional Skills:</strong> Communication, Teamwork, Problem-Solving, Analytical Thinking, Time Management</li>
+        </ul>
+
+    </body>
+</html>
