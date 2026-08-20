@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Examination Portal</title>
+    </head>
+    <body>
+        <!-- Main Table -->
+        <table border="1" width="100%" cellspacing="0" cellpadding="0">
+
+        <!-- Header -->
+        <tr bgcolor="#2196F3" height="160">
+            <td colspan="2" align="center">
+                <font color="white" size="7">
+                    <b>Smart Examination Portal</b>
+                </font>
+            </td>
+        </tr>
+
+        <!-- Navigation -->
+        <tr bgcolor="#87CEEB" height="35">
+            <td colspan="2" align="center">
+                <a href="#">Home</a> |
+                <a href="#">About</a> |
+                <a href="#">Courses</a> |
+                <a href="#">Exam Schedule</a> |
+                <a href="#">Results</a> |
+                <a href="#">Gallery</a>
+            </td>
+        </tr>
+
+        <!-- Tagline -->
+        <tr bgcolor="#4682B4" height="40">
+            <td colspan="2" align="center">
+                <font color="white">
+                    <b><i>
+                        <Marquee>Welcome to Smart Examination Portal – Learn, Test, and Grow!</Marquee>
+                    </i></b>
+                </font>
+            </td>
+        </tr>
+
+        <!-- Main Content -->
+        <tr>
+            <!-- Left Content -->
+            <td width="70%" valign="top" cellpadding="20">
+                <h1>
+                    Welcome to Smart Examination<br>
+                    Portal
+                </h1>
+                <hr>
+                <p>
+                    The Smart Examination Portal offers a modern and
+                    efficient way to conduct online tests. Our platform
+                    supports interactive assessments, instant grading,
+                    and detailed analytics for both students and instructors.
+                </p>
+
+                <p>
+                    Whether you are preparing for academic exams or
+                    professional certifications, our system helps you
+                    practice and perform efficiently. We believe in
+                    empowering learners through technology-driven education
+                    and seamless evaluation.
+                </p>
+            </td>
+
+            <!-- Team Section -->
+<td width="30%" bgcolor="#E6F7FF" align="center" valign="top">
+
+    <h2>Our Team</h2>
+
+    <hr>
+
+    <!-- Rahul Mehta -->
+    <marquee direction="up" scrollamount="5" height="180" align="center">
+        <center>
+
+    <b>Rahul Mehta</b>
+    <br>
+    Technical Lead
+
+    <br><br>
+
+    <b>Neha Gupta</b>
+    <br>
+    Exam Coordinator
+
+    <br><br>
+
+    <b>Aarav Sharma</b>
+    <br>
+    Software Developer
+
+    <br><br>
+
+    <b>Priya Singh</b>
+    <br>
+    UI/UX Designer
+
+    <br><br>
+
+    <b>Rohan Verma</b>
+    <br>
+    Project Manager
+
+    <br><br>
+
+    <b>Ananya Kapoor</b>
+    <br>
+    Data Analyst
+
+</center>
+    </marquee>
+
+</td>
+        </tr>
+        <!-- Footer -->
+            <tr bgcolor="#2196F3" height="60">
+                <td colspan="2" align="center">
+                    <font color="white">
+                        <b>
+                            © 2025 Smart Examination Portal | All Rights Reserved
+                        </b>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
