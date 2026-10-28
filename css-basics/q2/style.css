@@ -1,0 +1,181 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #7b2d43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    background-color: #3d1f2b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffc857;
+}
+
+/* Common Section Styling */
+section {
+    padding: 70px 10%;
+    min-height: 350px;
+    border-bottom: 4px solid white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Section 1: Linear Gradient */
+.home {
+    background: linear-gradient(
+        to right,
+        #f7c6c7,
+        #fceabb
+    );
+    color: #542437;
+    text-align: center;
+}
+
+/* Section 2: Fixed Background Image */
+.history {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.5)),
+        url("https://placehold.co/1200x700/9b7653/ffffff?text=Jaipur+History");
+
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Section 3: Radial Gradient */
+.places {
+    background: radial-gradient(
+        circle,
+        #ffe8b6,
+        #f4a261,
+        #bc6c25
+    );
+    color: #422006;
+    text-align: center;
+}
+
+/* Section 4: Fixed Background Image */
+.culture {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.5)),
+        url("https://placehold.co/1200x700/6b705c/ffffff?text=Rajasthani+Culture");
+
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Different Heading Sizes and Weights */
+section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+}
+
+.home h2 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.history h2 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.places h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.culture h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Paragraphs */
+section p {
+    font-size: 18px;
+    margin-top: 15px;
+    max-width: 900px;
+}
+
+/* Footer */
+footer {
+    background-color: #3d1f2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 45px 7%;
+    }
+
+    .home h2 {
+        font-size: 30px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    /* Fixed backgrounds may not work on mobile */
+    .history,
+    .culture {
+        background-attachment: scroll;
+    }
+}
+

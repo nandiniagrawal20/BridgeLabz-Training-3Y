@@ -1,0 +1,146 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+    padding: 40px 20px;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: #1e293b;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+/* Pricing Container */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Individual Plan */
+.plan {
+    background-color: white;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    padding: 30px 20px;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    /* Smooth Hover Animation */
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.plan:hover {
+    transform: scale(1.05);
+    background-color: #e0f2fe;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Plan Heading */
+.plan h2 {
+    font-size: 26px;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+/* Price */
+.price {
+    font-size: 30px;
+    color: #0284c7;
+    margin-bottom: 25px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* Feature List */
+.plan ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.plan ul li {
+    padding: 12px 5px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Button */
+.btn {
+    display: block;
+    background-color: #0284c7;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #075985;
+}
+
+/* Highlight Popular Plan */
+.popular {
+    border: 3px solid #0284c7;
+    background-color: #f0f9ff;
+    position: relative;
+}
+
+.badge {
+    background-color: #0284c7;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
