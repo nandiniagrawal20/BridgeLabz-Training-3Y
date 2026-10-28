@@ -1,0 +1,134 @@
+
+/* Apply to the entire page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make footer stay at the bottom */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fixed Header */
+header {
+    background-color: #14213d;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h2 {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 20px 40px;
+}
+
+/* Profile Section */
+.profile {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    font-size: 2rem;
+    color: #14213d;
+    margin-bottom: 15px;
+}
+
+.profile p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #14213d;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #fca311;
+    color: #14213d;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 500px) {
+    header h2 {
+        font-size: 1rem;
+    }
+
+    nav a {
+        margin-left: 8px;
+        font-size: 0.85em;
+    }
+
+    .profile {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .profile img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
