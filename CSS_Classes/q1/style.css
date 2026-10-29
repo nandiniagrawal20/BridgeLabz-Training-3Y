@@ -1,0 +1,139 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Main section using Flexbox */
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual example cards */
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    color: #007f86;
+    margin-top: 0;
+}
+
+.card p {
+    line-height: 1.5;
+    font-size: 14px;
+    min-height: 63px;
+}
+
+/* 1. :hover changes a link when the mouse moves over it */
+.hover-link {
+    display: inline-block;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 0;
+}
+
+.hover-link:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+/* 2. :focus changes the input when it is selected */
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007f86;
+    background-color: #e8fafa;
+}
+
+/* 3. :active applies while the button is being pressed */
+.active-button {
+    background-color: #243b55;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active-button:active {
+    background-color: #e63946;
+    transform: scale(0.95);
+}
+
+/* 4. :nth-child() selects list items by their position */
+
+/* Odd-numbered items */
+.topic-list li:nth-child(odd) {
+    background-color: #dbeafe;
+}
+
+/* Even-numbered items */
+.topic-list li:nth-child(even) {
+    background-color: #d1fae5;
+}
+
+.topic-list li {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    .examples {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+

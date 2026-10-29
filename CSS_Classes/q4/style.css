@@ -1,0 +1,125 @@
+
+/* Universal selector: applies box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Element selector: styles all body elements */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Element selector: styles the header */
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+/* Descendant selector: selects paragraphs inside the header */
+header p {
+    color: #dbeafe;
+}
+
+/* Element selector: styles all h2 headings */
+h2 {
+    color: #007f86;
+    margin-top: 0;
+}
+
+/* Class selector: styles every element with class="card" */
+.card {
+    background-color: white;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 850px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Class selector: highlights paragraphs with class="highlight" */
+.highlight {
+    background-color: #dbeafe;
+    color: #174ea6;
+    padding: 10px;
+    border-left: 4px solid #174ea6;
+}
+
+/* ID selector: styles the element with id="unique-text" */
+#unique-text {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* Attribute selector: selects links whose href starts with https */
+a[href^="https"] {
+    color: #007f86;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hover state for links */
+a[href^="https"]:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+/* Child combinator (>): selects only direct child paragraphs */
+.parent > p {
+    background-color: #dbeafe;
+    padding: 10px;
+}
+
+/* Descendant combinator (space): selects all paragraphs inside .parent */
+.parent p {
+    border-left: 3px solid #007f86;
+    padding-left: 10px;
+}
+
+/* Adjacent sibling combinator (+): selects the first p immediately after h3 */
+h3 + p {
+    background-color: #fff3cd;
+    padding: 10px;
+}
+
+/* General sibling combinator (~): selects all p siblings after h3 */
+.combinator-section h3 ~ p {
+    border-bottom: 2px solid #cbd5e1;
+    padding: 10px;
+}
+
+/* Element selector: styles list items */
+li {
+    margin: 6px 0;
+    padding: 8px;
+    background-color: #e0f2f1;
+    border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        margin: 15px;
+        padding: 18px;
+    }
+}
+

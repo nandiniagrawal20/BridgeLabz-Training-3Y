@@ -1,0 +1,134 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Center all tooltip examples using Flexbox */
+.tooltip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    min-height: 400px;
+    padding: 40px 20px;
+}
+
+/* Individual tooltip item */
+.tooltip-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+}
+
+/* Icon styling */
+.icon {
+    display: inline-block;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+/* Word styling */
+.tooltip-word {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #007f86;
+    margin: 10px 0;
+}
+
+/* Tooltip box */
+.tooltip-text {
+    position: absolute;
+    bottom: calc(100% - 5px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #222;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 6px;
+
+    width: 190px;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Smooth fade-in and fade-out */
+    transition: opacity 0.3s ease-in-out,
+                visibility 0.3s ease-in-out;
+
+    z-index: 10;
+}
+
+/* Small arrow below the tooltip */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-width: 6px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+/* Display tooltip when the item is hovered */
+.tooltip-item:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Item label */
+.tooltip-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .tooltip-container {
+        gap: 25px;
+        padding: 30px 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+

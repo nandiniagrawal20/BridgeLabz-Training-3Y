@@ -1,0 +1,81 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Selectors Practice</h1>
+        <p>Learn different types of CSS selectors with examples.</p>
+    </header>
+
+    <main>
+
+        <!-- Element Selector -->
+        <section class="card">
+            <h2>1. Element Selector</h2>
+            <p>Element selectors style all elements of a particular type.</p>
+            <p>This is another paragraph using the same element selector.</p>
+        </section>
+
+        <!-- Class Selector -->
+        <section class="card">
+            <h2>2. Class Selector</h2>
+            <p class="highlight">This paragraph uses a class selector.</p>
+            <p class="highlight">Another paragraph with the same class.</p>
+        </section>
+
+        <!-- ID Selector -->
+        <section class="card">
+            <h2>3. ID Selector</h2>
+            <p id="unique-text">This paragraph has a unique ID.</p>
+        </section>
+
+        <!-- Attribute Selector -->
+        <section class="card">
+            <h2>4. Attribute Selector</h2>
+            <p>Click the link below to visit a learning website.</p>
+            <a href="https://developer.mozilla.org/">Learn CSS on MDN</a>
+        </section>
+
+        <!-- CSS Combinators -->
+        <section class="card combinator-section">
+            <h2>5. CSS Combinators</h2>
+
+            <div class="parent">
+                <p>This paragraph is a direct child of the parent.</p>
+
+                <div class="nested">
+                    <p>This paragraph is a nested descendant.</p>
+                </div>
+            </div>
+
+            <h3>Adjacent Sibling (+)</h3>
+            <p>This paragraph immediately follows the heading.</p>
+            <p>This is the next paragraph.</p>
+
+            <h3>General Sibling (~)</h3>
+            <p>This paragraph is a sibling of the heading.</p>
+            <p>This paragraph is also a sibling of the heading.</p>
+
+            <ul class="topic-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CSS Selectors Practice | HTML and CSS Only</p>
+    </footer>
+
+</body>
+</html>
+```
