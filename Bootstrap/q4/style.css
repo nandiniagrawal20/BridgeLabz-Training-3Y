@@ -1,0 +1,81 @@
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf3;
+    color: #333;
+}
+
+/* Restaurant Header */
+.restaurant-header {
+    background: linear-gradient(135deg, #7b241c, #c0392b);
+}
+
+/* Header Subtitle */
+.restaurant-header .lead {
+    margin-bottom: 0;
+}
+
+/* Menu Table */
+.table {
+    background-color: white;
+}
+
+.table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+/* Chef's Specials Section */
+.specials-box {
+    background-color: white;
+    border-top: 4px solid #c0392b;
+}
+
+.specials-box h2 {
+    color: #7b241c;
+}
+
+/* Food Image */
+.food-figure img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.food-figure img:hover {
+    transform: scale(1.02);
+}
+
+/* Restaurant Information */
+.restaurant-info {
+    background-color: #f5e6d3;
+}
+
+.restaurant-info h2 {
+    color: #7b241c;
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    background-color: #4a1712;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 575.98px) {
+    .restaurant-header h1 {
+        font-size: 2.3rem;
+    }
+
+    main.container {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .specials-box {
+        padding: 20px !important;
+    }
+}
+

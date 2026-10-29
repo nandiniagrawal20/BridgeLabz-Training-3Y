@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notifications Dashboard</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Notifications_Dashboard.css">
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <main class="container my-5">
+
+        <!-- Dashboard Header -->
+        <header class="text-center mb-4">
+            <h1 class="dashboard-title">Notifications Dashboard</h1>
+            <p class="text-muted">Stay updated with your latest notifications.</p>
+        </header>
+
+        <!-- Summary Well -->
+        <section class="bg-light border rounded p-4 mb-4">
+            <h2 class="h4">Notification Summary</h2>
+
+            <div class="row text-center mt-3">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="summary-box">
+                        <h3>5</h3>
+                        <p class="mb-0">New Messages</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="summary-box">
+                        <h3>3</h3>
+                        <p class="mb-0">Tips Available</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="summary-box">
+                        <h3>2</h3>
+                        <p class="mb-0">Warnings</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notifications Card -->
+        <section class="card shadow-sm">
+
+            <div class="card-header">
+                <h2 class="h4 mb-0">Recent Notifications</h2>
+            </div>
+
+            <div class="card-body">
+
+                <!-- Success Alert -->
+                <div class="alert alert-success" role="alert">
+                    <strong>New Message!</strong>
+                    You have received 5 new messages in your inbox.
+                </div>
+
+                <!-- Info Alert -->
+                <div class="alert alert-info" role="alert">
+                    <strong>Helpful Tip!</strong>
+                    Remember to update your profile to keep your information current.
+                </div>
+
+                <!-- Dismissible Danger Alert -->
+                <div class="alert alert-danger alert-dismissible fade show"
+                     role="alert">
+
+                    <strong>Warning!</strong>
+                    Your password will expire soon. Please update it.
+
+                    <!-- Dismiss button -->
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="alert"
+                            aria-label="Close">
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p class="mb-0">
+            &copy; 2026 Notifications Dashboard | Built with Bootstrap 5
+        </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle: required for dismissible alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

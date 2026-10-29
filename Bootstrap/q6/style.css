@@ -1,0 +1,74 @@
+/* Page Styling */
+body {
+    background-color: #f4f7fb;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+/* Dashboard Heading */
+.dashboard-title {
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+/* Summary Section */
+.summary-box {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Summary Box Hover Effect */
+.summary-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Summary Numbers */
+.summary-box h3 {
+    color: #0d6efd;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Notifications Card */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Card Header */
+.card-header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 18px;
+}
+
+/* Alert Styling */
+.alert {
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #e9ecef;
+    color: #555555;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .dashboard-title {
+        font-size: 26px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .summary-box {
+        padding: 15px;
+    }
+}

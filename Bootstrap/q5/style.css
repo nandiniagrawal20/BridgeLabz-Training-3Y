@@ -1,0 +1,116 @@
+/* Custom Bootstrap Theme Variables */
+:root {
+    --bs-primary: #6c4ab6;
+    --bs-primary-rgb: 108, 74, 182;
+
+    --bs-font-sans-serif: 'Poppins', sans-serif;
+
+    --bs-body-bg: #f8f6fc;
+    --bs-body-color: #343047;
+}
+
+/* Apply Google Font */
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+/* Header */
+.blog-header {
+    background: linear-gradient(135deg, #6c4ab6, #a084dc);
+    color: white;
+}
+
+.blog-header h1 {
+    color: white;
+}
+
+.blog-header p {
+    color: #f2edff;
+}
+
+/* Custom Primary Button */
+.btn-primary {
+    --bs-btn-bg: #6c4ab6;
+    --bs-btn-border-color: #6c4ab6;
+
+    --bs-btn-hover-bg: #52368f;
+    --bs-btn-hover-border-color: #52368f;
+
+    --bs-btn-active-bg: #432b78;
+    --bs-btn-active-border-color: #432b78;
+
+    --bs-btn-color: #ffffff;
+}
+
+/* Section Heading */
+.section-title {
+    color: var(--bs-primary);
+    font-weight: 700;
+}
+
+/* Blog Cards */
+.blog-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(50, 35, 80, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(50, 35, 80, 0.2);
+}
+
+/* Blog Images */
+.blog-card .card-img-top {
+    height: 240px;
+    object-fit: cover;
+}
+
+/* Blog Card Titles */
+.blog-card .card-title {
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+
+/* Category Badge */
+.blog-card .badge {
+    background-color: #eee7ff;
+    color: #52368f;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+/* Card Footer */
+.blog-card .card-footer {
+    background-color: #faf8ff;
+    color: #777087;
+    border-top: 1px solid #eee8f8;
+    font-size: 13px;
+    padding: 15px;
+}
+
+/* Footer */
+.blog-footer {
+    background-color: #30234a;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .blog-header {
+        padding: 35px 15px !important;
+    }
+
+    .blog-header h1 {
+        font-size: 2rem;
+    }
+
+    .blog-card .card-img-top {
+        height: 200px;
+    }
+}
