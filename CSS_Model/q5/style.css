@@ -1,0 +1,183 @@
+
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Descendant selector: selects all paragraphs inside the header */
+header p {
+    color: #dbeafe;
+}
+
+/* Main layout */
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #243b55;
+}
+
+/* =========================================
+   1. ATTRIBUTE SELECTORS
+   ========================================= */
+
+/* Selects input elements whose type is exactly "text" */
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #b0bec5;
+    border-radius: 5px;
+}
+
+/* Selects links whose href value starts with "https" */
+a[href^="https"] {
+    color: #007f86;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a[href^="https"]:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   2. PSEUDO-CLASSES
+   ========================================= */
+
+/* :hover applies styling when the mouse is over an element */
+button {
+    background-color: #243b55;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007f86;
+}
+
+/* :focus applies styling when an input is selected */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007f86;
+    box-shadow: 0 0 6px rgba(0, 127, 134, 0.4);
+}
+
+/* :nth-child(odd) selects odd-numbered list items */
+.topic-list li:nth-child(odd) {
+    background-color: #dbeafe;
+}
+
+/* :nth-child(even) selects even-numbered list items */
+.topic-list li:nth-child(even) {
+    background-color: #e0f2f1;
+}
+
+.topic-list li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+/* =========================================
+   3. PSEUDO-ELEMENTS
+   ========================================= */
+
+/* ::before inserts content before the heading text */
+.special-heading::before {
+    content: "★ ";
+    color: #f59e0b;
+}
+
+/* ::after inserts content after the paragraph text */
+.special-text::after {
+    content: " ✓";
+    color: #007f86;
+    font-weight: bold;
+}
+
+/* =========================================
+   4. CSS COMBINATORS
+   ========================================= */
+
+/* Child combinator (>): selects only direct child paragraphs */
+.parent > p {
+    background-color: #dbeafe;
+    padding: 10px;
+}
+
+/* Descendant combinator (space): selects all paragraphs
+   inside .parent, including nested paragraphs */
+.parent p {
+    border-left: 4px solid #007f86;
+    padding: 10px;
+}
+
+/* Adjacent sibling combinator (+): selects the first paragraph
+   immediately following an h3 */
+h3 + p {
+    background-color: #fff3cd;
+    padding: 10px;
+}
+
+/* General sibling combinator (~): selects all paragraphs
+   that follow this h3 and share the same parent */
+.combinator-section h3 ~ p {
+    border-bottom: 2px solid #007f86;
+    padding: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+}
+

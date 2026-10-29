@@ -1,0 +1,150 @@
+/* Reset Default Spacing */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* Basic Page Styling */
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 90px;
+}
+
+body {
+font-family: Arial, sans-serif;
+color: white;
+line-height: 1.6;
+}
+
+/* Fixed Header */
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 15px 30px;
+background-color: #172554;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+z-index: 1000;
+}
+
+header h1 {
+font-size: 24px;
+}
+
+nav {
+display: flex;
+gap: 20px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+}
+
+nav a:hover {
+color: #facc15;
+}
+
+/* Main Content */
+main {
+padding-top: 70px;
+padding-bottom: 65px;
+}
+
+/* Linear Gradient Section */
+.linear-section {
+min-height: 85vh;
+background: linear-gradient(135deg, #2563eb, #9333ea, #ec4899);
+background-attachment: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 40px 20px;
+}
+
+/* Radial Gradient Section */
+.radial-section {
+min-height: 85vh;
+background: radial-gradient(circle, #facc15, #f97316, #b91c1c);
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 40px 20px;
+}
+
+/* Text Content */
+.content {
+max-width: 650px;
+padding: 30px;
+background-color: rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+
+.content h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.content p {
+font-size: 18px;
+margin-bottom: 12px;
+}
+
+/* Fixed Footer */
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #172554;
+text-align: center;
+padding: 15px;
+z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+header {
+flex-direction: column;
+padding: 12px;
+gap: 8px;
+}
+
+
+header h1 {
+    font-size: 21px;
+}
+
+nav {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 14px;
+}
+
+main {
+    padding-top: 105px;
+    padding-bottom: 60px;
+}
+
+.content h2 {
+    font-size: 28px;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+
+}
