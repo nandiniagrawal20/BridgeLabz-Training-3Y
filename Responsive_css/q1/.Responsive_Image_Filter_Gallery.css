@@ -1,0 +1,119 @@
+
+/* Remove Default Spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #263238;
+    color: white;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Gallery Grid Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Individual Gallery Item */
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.5s ease;
+}
+
+/* Different CSS Filters */
+.blur {
+    filter: blur(3px);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.brightness {
+    filter: brightness(150%);
+}
+
+.contrast {
+    filter: contrast(180%);
+}
+
+.hue-rotate {
+    filter: hue-rotate(120deg);
+}
+
+/* Remove Filter on Hover */
+.gallery-item img:hover {
+    filter: none;
+}
+
+/* Image Caption */
+.gallery-item figcaption {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #263238;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* Responsive Layout for Mobile Screens */
+@media (max-width: 599px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+

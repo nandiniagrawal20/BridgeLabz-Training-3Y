@@ -1,0 +1,128 @@
+
+/* Remove Default Spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #263238;
+    color: white;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Cheat Sheet Grid */
+.cheat-sheet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 35px;
+}
+
+/* Individual Cheat Sheet Card */
+.cheat-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #00897b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    /* Smooth Hover Transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Heading */
+.cheat-card h2 {
+    color: #00796b;
+    font-size: 22px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0f2f1;
+}
+
+/* Card Content */
+.card-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* Code Example */
+.cheat-card code {
+    display: inline-block;
+    background-color: #eceff1;
+    color: #c62828;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+/* Hover Effect */
+.cheat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    background-color: #f0faf9;
+}
+
+/* Responsive Design Below 700px */
+@media (max-width: 699px) {
+
+    /* Stack Cards Vertically */
+    .cheat-sheet {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    /* Display Each Card as Key-Value Rows */
+    .cheat-card {
+        padding: 20px;
+    }
+
+    .cheat-card h2 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #263238;
+    color: white;
+    padding: 20px;
+}
+
