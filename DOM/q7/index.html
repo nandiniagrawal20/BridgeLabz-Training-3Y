@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Coordinates</title>
+
+    <style>
+        #mouseBox {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            position: relative;
+            background: lightgray;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mouse Coordinates Logger</h1>
+
+    <div id="mouseBox"></div>
+
+    <p id="coordinates">Move your mouse inside the box</p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
